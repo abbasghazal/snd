@@ -51,11 +51,11 @@ logging.basicConfig(
 
 async def join_channel():
     try:
-        await cawy(JoinChannelRequest("@abdddt"))
+        await cawy(JoinChannelRequest("@SHAHMPLUS"))
     except BaseException:
         pass
     try:
-        await cawy(JoinChannelRequest("@abdddt"))
+        await cawy(JoinChannelRequest("@SHAHMPLUS"))
     except BaseException:
         pass
  
@@ -64,7 +64,7 @@ PM_LOGGER_GROUP_ID = None
 async def create_storage_group(cawy):
     result = await cawy(CreateChannelRequest(
         title="كروب التخزين | Source سايرون",  
-        about="تم انشاء هذا الكروب لتخزين الرسائل\n 𝐃𝐄𝐕↬ @shahm41 𝐂𝐇 ↬ @abdddt",  
+        about="تم انشاء هذا الكروب لتخزين الرسائل\n 𝐃𝐄𝐕↬ @shahm41 𝐂𝐇 ↬ @SHAHMPLUS",  
         megagroup=True  
     ))
     
@@ -1096,7 +1096,7 @@ async def respond_to_greeting(event):
 async def get_users(event):
     legen_ = event.text[10:]
     cawy_chat = legen_.lower
-    restricted = ["@abdddt"]
+    restricted = ["@SHAHMPLUS"]
     cawy = await event.edit(f"**جارِ اضأفه الاعضاء من  ** {legen_}")
     if cawy_chat in restricted:
         return await cawy.edit(
